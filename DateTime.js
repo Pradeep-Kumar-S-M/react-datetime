@@ -251,6 +251,9 @@ var Datetime = React.createClass({
 	},
 
 	openCalendar: function() {
+		if(this.props.onFocus){
+			this.props.onFocus();
+		}
 		this.setState({ open: true });
 	},
 
