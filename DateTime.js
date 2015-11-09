@@ -250,9 +250,9 @@ var Datetime = React.createClass({
 		this.props.onChange( date );
 	},
 
-	openCalendar: function() {
+	openCalendar: function(event) {
 		if(this.props.onFocus){
-			this.props.onFocus();
+			this.props.onFocus(event);
 		}
 		this.setState({ open: true });
 	},
